@@ -28,7 +28,7 @@ public class ProductController {
 
     @PostMapping("/product/add")
     public Res productAdd(@RequestParam("name") String name, @RequestParam("description") String description, @RequestParam("price") int price, @RequestParam("url") String url) {
-        String sql = "insert into product(name, description, price, url) values(?,?,?,?)";
+        String sql = "insert into product(name, description, price, url) values(?, ?,?,?,?)";
         int status = jdbcTemplate.update(sql, new Object[]{name, description, price, url});
 
         return new Res(status, "add product");

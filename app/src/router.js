@@ -9,6 +9,7 @@ import MessageComponent from './components/MessageComponent.vue'
 import BoxListComponent from './components/BoxListComponent.vue'
 import AdminPanelComponent from './components/AdminPanelComponent.vue'
 import AddProductComponent from './components/AddProductComponent.vue'
+import AddrComponent from './components/AddrComponent.vue'
 
 const routes = [
   { path: '/', component: LoginComponent },
@@ -20,6 +21,7 @@ const routes = [
   { path: '/user/box', component:  BoxListComponent},
   { path: '/admin/manage', component:  AdminPanelComponent},
   { path: '/admin/addproduct', component:  AddProductComponent},
+  { path: '/user/address', component:  AddrComponent},
 ];
 
 const router = createRouter({
